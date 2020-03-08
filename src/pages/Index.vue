@@ -1,18 +1,18 @@
 <template>
-      <q-icon :name="icon" class="container" color="primary" size="4rem">
-        <q-tooltip>{{ icon }}</q-tooltip>
-      </q-icon>
+  <q-icon :name="icon" class="container" color="primary" size="4rem">
+    <q-tooltip>{{ icon }}</q-tooltip>
+  </q-icon>
 </template>
 
 <script>
 export default {
-  name: 'PageIndex',
-  data () {
+  name: "PageIndex",
+  data() {
     return {
-      icon: 'add_box'
-    }
+      icon: "nueva publicacion"
+    };
   }
-}
+};
 </script>
 <style lang="sass" scoped>
 .container
