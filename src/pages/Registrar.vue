@@ -1,7 +1,7 @@
 <template>
- <q-form class="q-mt-xl q-pa-md" @submit="onSubmit" @reset="onReset">
-      <div class="column items-center">
-    <div class="q-col-gutter-md">
+  <q-form class="q-mt-xl q-pa-md" @submit="onSubmit" @reset="onReset">
+    <div class="column items-center">
+      <div class="q-col-gutter-md">
         <custom-input
           v-if="customInput"
           filled
@@ -33,7 +33,7 @@
             asyncRule
           ]"
         />
-         <q-input
+        <q-input
           v-model="pwdconfir"
           :dark="dark"
           :color="dark ? 'yellow' : 'primary'"
@@ -44,30 +44,28 @@
             asyncRule
           ]"
         />
-        <q-toggle :dark="dark" v-model="accept" label="I accept the license and terms" :autofocus="autofocusEl === 3" />
-
         <div>
           <q-btn label="Submit" type="submit" color="primary" :loading="loading" />
-          <q-btn label="Reset" type="reset" color="primary" flat class="q-ml-sm" :loading="loading" />
+          <q-btn label="Reset" type="reset" color="primary" flat class="q-ml-sm" :loading="loading"
+          />
         </div>
       </div>
-      </div>
-      <div class="column items-center">
-      <br>
+    </div>
+    <div class="column items-center">
+      <br />
       <router-link to="/iniciarsesion">Iniciar Sesión</router-link>
-      </div>
-    </q-form>
+    </div>
+  </q-form>
 </template>
 
 <script>
 export default {
-  components: {
-  },
+  components: {},
   data () {
     return {
-      accept: false,
       dark: false,
-      pwd: null
+      pwd: null,
+      email: null
     }
   },
 
@@ -89,8 +87,6 @@ export default {
       this.email = null
       this.pwd = null
       this.pwdconfir = null
-      this.accept = false
-
       console.log('@reset')
     },
 

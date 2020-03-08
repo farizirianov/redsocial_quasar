@@ -1,7 +1,7 @@
 <template>
- <q-form class="q-mt-xl q-pa-md" @submit="onSubmit" @reset="onReset">
-      <div class="column items-center">
-    <div class="q-col-gutter-md">
+  <q-form class="q-mt-xl q-pa-md" @submit="onSubmit" @reset="onReset">
+    <div class="column items-center">
+      <div class="q-col-gutter-md">
         <custom-input
           v-if="customInput"
           filled
@@ -48,19 +48,25 @@
           ]"
         />
 
-        <q-select filled v-model="selectModel" :options="options" use-input behavior="menu" label="Selecciona tu sexo" />
+        <q-select
+          filled
+          v-model="selectModel"
+          :options="options"
+          use-input
+          behavior="menu"
+          label="Selecciona tu sexo"
+        />
         <div>
           <q-btn label="Guardar" type="submit" color="primary" :loading="loading" />
         </div>
       </div>
-      </div>
-    </q-form>
+    </div>
+  </q-form>
 </template>
 
 <script>
 export default {
-  components: {
-  },
+  components: {},
   data () {
     return {
       name: null,

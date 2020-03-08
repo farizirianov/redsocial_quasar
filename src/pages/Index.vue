@@ -6,13 +6,13 @@
 
 <script>
 export default {
-  name: "PageIndex",
-  data() {
+  name: 'PageIndex',
+  data () {
     return {
-      icon: "nueva publicacion"
-    };
+      icon: 'nueva publicacion'
+    }
   }
-};
+}
 </script>
 <style lang="sass" scoped>
 .container

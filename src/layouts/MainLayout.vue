@@ -88,45 +88,45 @@
   </q-layout>
 </template>
 <script>
-import EssentialLink from "components/EssentialLink";
+import EssentialLink from 'components/EssentialLink'
 export default {
-  name: "MainLayout",
+  name: 'MainLayout',
 
   components: {
     EssentialLink
   },
-  data() {
+  data () {
     return {
       leftDrawerOpen: false,
-      search: "",
+      search: '',
       essentialLinks: [
         {
-          title: "Inicio",
-          icon: "home",
-          link: ""
+          title: 'Inicio',
+          icon: 'home',
+          link: ''
         },
         {
-          title: "Amigos",
-          icon: "people",
-          link: ""
+          title: 'Amigos',
+          icon: 'people',
+          link: ''
         },
         {
-          title: "Entretenimiento",
-          icon: "videogame_asset",
-          link: ""
+          title: 'Entretenimiento',
+          icon: 'videogame_asset',
+          link: ''
         },
         {
-          title: "Ajustes",
-          icon: "widgets",
-          link: ""
+          title: 'Ajustes',
+          icon: 'widgets',
+          link: ''
         },
         {
-          title: "Cerrar Sesión",
-          icon: "dashboard",
-          link: ""
+          title: 'Cerrar Sesión',
+          icon: 'dashboard',
+          link: ''
         }
       ]
-    };
+    }
   }
-};
+}
 </script>

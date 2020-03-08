@@ -3,15 +3,14 @@
     <div
       v-ripple.center
       class="relative-position container bg-grey-3 text-black inline flex flex-center"
-    >
-      Center
-    </div>
+    >Center</div>
 
     <div
       v-ripple
       class="relative-position container bg-grey-3 text-black inline flex flex-center text-center"
     >
-      Touch point<br>(default)
+      Touch point
+      <br />(default)
     </div>
   </div>
 </template>
